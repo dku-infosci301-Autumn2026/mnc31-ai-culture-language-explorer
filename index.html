@@ -117,29 +117,38 @@
       <p class="prototype-note"><b>Prototype note:</b> these are hand-defined demonstration hotspots, not automatic OCR. The next version can let a visitor draw a box around any text region and send that crop through an OCR/translation pipeline.</p>
     </section>
 
-    <section id="explore">
+    <section id="explore" class="evidence-bridge">
       <div class="heading">
         <div>
-          <label>02 · NEXT DATA LAYER</label>
-          <h2>Connect the image to evidence.</h2>
+          <label>02 · FROM REAL-WORLD OBSERVATIONS TO DATA</label>
+          <h2>Connect the image to the data behind AI.</h2>
         </div>
       </div>
-      <div class="methods">
-        <div>
-          <b>01</b>
-          <h3>Visual text</h3>
-          <p>The visitor starts with a photograph rather than a clean dataset row.</p>
-        </div>
-        <div>
-          <b>02</b>
-          <h3>Standardized reading</h3>
-          <p>Traditional, stylized, or handwritten-looking characters can be normalized for an international learner.</p>
-        </div>
-        <div>
-          <b>03</b>
-          <h3>Cultural context</h3>
-          <p>The explanation should distinguish literal translation from the cultural meaning or use of a phrase.</p>
-        </div>
+      <p class="evidence-bridge-intro">
+        The image demo shows where AI interpretations of real-world Chinese text can differ or become uncertain. The datasets that follow offer a second perspective: they show examples and evaluation tasks researchers can use to examine language and cultural understanding. They do not, by themselves, reveal exactly what a deployed AI was trained on.
+      </p>
+
+      <div class="methods evidence-bridge-steps">
+        <article>
+          <b>01 · OBSERVE</b>
+          <h3>Start with a real image</h3>
+          <p>Photographs of inscriptions, signboards, and other visual text can contain stylized characters, historical forms, or cultural references that make interpretation difficult. The demo compares saved AI readings of selected images.</p>
+        </article>
+        <article>
+          <b>02 · EXAMINE PROMPTS</b>
+          <h3>CC-Eval: possible tests</h3>
+          <p>CC-Eval provides prompts and tasks for evaluating cultural and language understanding. It can help frame future tests, but the prompts alone are not a dataset of model-training examples and do not show how a model was trained.</p>
+        </article>
+        <article>
+          <b>03 · EXAMINE BENCHMARK DATA</b>
+          <h3>Global-MMLU-Lite: language comparisons</h3>
+          <p>The available English and Simplified Chinese records allow comparisons between matched benchmark questions, labels, and answer keys. The current view does not compare live AI responses, so it cannot show how a particular model answered those questions.</p>
+        </article>
+      </div>
+
+      <div class="evidence-bridge-note">
+        <strong>What this project can—and cannot—show</strong>
+        <p>These resources help describe what researchers can test and what information is represented in the available records. Because this project does not include verified training-data provenance or a complete set of reference materials, it cannot establish that either dataset trained a specific AI, explain why a particular response occurred, or judge every translation as correct. Those are questions for further testing and documented evidence.</p>
       </div>
     </section>
 
